@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jokenpô Game</title>
+</head>
+<body>
+    <header>
+        <h1>Jokenpô Game</h1>
+    </header>
+    <section>
+        <div class="spacePlayer">
+            <span class="playerName">PLAYER 1</span>
+            <span class="counterPlayer">0</span>
+            <div class="player01">
+                <img class="paperP1" src="./src/papel.png" alt="paper" onclick="select(0)" />
+                <img class="rockP1" src="./src/pedra.png" alt="rock" onclick="select(1)" />
+                <img class="scissorsP1" src="./src/tesoura.png" alt="scissors" onclick="select(2)" />
+            </div>
+        </div>
+
+        <div class="spacePlayer">
+            <span class="playerName">COMPUTER</span>
+            <span class="counterComputer">0</span>
+            <div class="player02">
+                <img class="paperP2" src="./src/papel.png" alt="paper" />
+                <img class="rockP2" src="./src/pedra.png" alt="rock" />
+                <img class="scissorsP2" src="./src/tesoura.png" alt="scissors" />
+            </div>
+        </div>
+    </section>
+
+    <div id="result">&nbsp;</div>
+    <div id="reset" onclick="reset()">
+        <span class='material-icons' >replay</span>
+    </div>
+    
+
+    <footer id="footer-end">
+        <p><a href="https://github.com/PabloRuanP" target="_blank">&copy; Developed by: Pablo Ruan</a></p>
+     </footer>
+     <script src="script.js"></script>
+</body>
+</html>
